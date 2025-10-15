@@ -359,9 +359,9 @@ export default function Contact() {
                 <div className="text-center mb-6">
                   <div className="flex justify-center mb-4 p-4 bg-white/20 rounded-xl w-fit mx-auto">
                     <img 
-                      src="https://mocha-cdn.com/0199e1f2-4caf-7b65-b046-778aaa80d015/output-onlinepngtools.png" 
-                      alt="MULTIVANTAGE Logo"
-                      className="h-20 w-20 animate-float-gentle drop-shadow-lg"
+                      src="/logo.svg" 
+                      alt="MULTIVANTAGE Logo" 
+                      className="w-12 h-12 rounded-lg"
                     />
                   </div>
                   <h3 className="font-heading text-2xl font-bold mb-2">

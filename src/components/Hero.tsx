@@ -31,9 +31,9 @@ export default function Hero() {
             <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-6 mb-8">
               <div className="flex-shrink-0 p-4">
                 <img 
-                  src="https://mocha-cdn.com/0199e1f2-4caf-7b65-b046-778aaa80d015/output-onlinepngtools.png" 
-                  alt="MULTIVANTAGE Logo"
-                  className="h-80 w-80 lg:h-96 lg:w-96 animate-float-gentle drop-shadow-2xl rounded-2xl bg-white/10 backdrop-blur-sm p-3 border border-orange-100/30"
+                  src="/logo.svg" 
+                  alt="MULTIVANTAGE Logo" 
+                  className="h-12 w-12 rounded-lg"
                 />
               </div>
               <div className="flex-1">

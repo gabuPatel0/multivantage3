@@ -67,9 +67,9 @@ export default function Header() {
             <div className="flex-shrink-0 flex items-center space-x-3 group">
               <div className="relative">
                 <img 
-                  src="https://mocha-cdn.com/0199e1f2-4caf-7b65-b046-778aaa80d015/output-onlinepngtools.png" 
-                  alt="MULTIVANTAGE Logo"
-                  className="h-16 w-16 lg:h-20 lg:w-20 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 drop-shadow-md"
+                  src="/logo.svg" 
+                  alt="MULTIVANTAGE Logo" 
+                  className="h-8 w-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-400/20 to-green-400/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
               </div>

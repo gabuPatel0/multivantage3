@@ -136,9 +136,9 @@ export default function Industries() {
               <div className="flex justify-center mb-8">
                 <div className="p-5 bg-white/80 rounded-2xl shadow-lg border border-orange-100/50">
                   <img 
-                    src="https://mocha-cdn.com/0199e1f2-4caf-7b65-b046-778aaa80d015/output-onlinepngtools.png" 
-                    alt="MULTIVANTAGE Logo"
-                    className="h-24 w-24 animate-float-gentle drop-shadow-lg"
+                    src="/logo.svg" 
+                    alt="MULTIVANTAGE Logo" 
+                    className="w-16 h-16 rounded-full object-cover border-2 border-orange-500 shadow-lg"
                   />
                 </div>
               </div>

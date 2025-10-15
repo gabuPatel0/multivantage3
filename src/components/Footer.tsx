@@ -38,9 +38,9 @@ export default function Footer() {
             <div className="flex items-center space-x-4 mb-4">
               <div className="p-2 bg-white/10 rounded-xl">
                 <img 
-                  src="https://mocha-cdn.com/0199e1f2-4caf-7b65-b046-778aaa80d015/output-onlinepngtools.png" 
-                  alt="MULTIVANTAGE Logo"
-                  className="h-16 w-16 group-hover:scale-110 transition-transform duration-300 drop-shadow-md"
+                  src="/logo.svg" 
+                  alt="MULTIVANTAGE Logo" 
+                  className="h-8 w-auto"
                 />
               </div>
               <div className="font-heading text-2xl font-bold text-gradient">
