@@ -7,7 +7,7 @@ A modern, responsive website for MULTIVANTAGE, a leading professional corporatio
 - ✨ Modern, beautiful design with gradient themes
 - 📱 Fully responsive for all devices
 - 🎨 Smooth animations and transitions
-- 📧 Contact form with email notifications
+- 📧 Contact form 
 - 🚀 Optimized for performance
 - 🔍 SEO friendly
 
@@ -17,7 +17,6 @@ A modern, responsive website for MULTIVANTAGE, a leading professional corporatio
 - **Styling**: Tailwind CSS with custom animations
 - **Icons**: Lucide React
 - **Fonts**: Playfair Display (headings) + Inter (body)
-- **Deployment**: Vercel
 
 ## Quick Start
 
@@ -32,59 +31,30 @@ A modern, responsive website for MULTIVANTAGE, a leading professional corporatio
    npm install
    ```
 
-3. **Set up environment variables**
-   Create a `.env.local` file with:
-   ```
-   RESEND_API_KEY=your_resend_api_key_here
-   ```
-
-4. **Run development server**
+3. **Run development server**
    ```bash
    npm run dev
    ```
 
-5. **Build for production**
+4. **Build for production**
    ```bash
    npm run build
    ```
 
-## Deployment to Vercel
-
-1. **Install Vercel CLI**
+5. **Preview production build**
    ```bash
-   npm i -g vercel
+   npm run preview
    ```
-
-2. **Deploy**
-   ```bash
-   vercel
-   ```
-
-3. **Set environment variables in Vercel dashboard**
-   - Go to your project settings
-   - Add `RESEND_API_KEY` with your Resend API key
-
-## Contact Form Setup
-
-The contact form uses [Resend](https://resend.com) for email delivery:
-
-1. Sign up for a free Resend account
-2. Get your API key from the dashboard
-3. Add the API key to your environment variables
-4. Update the email addresses in `api/contact.ts` if needed
 
 ## Project Structure
 
 ```
-├── api/                    # Vercel serverless functions
-│   └── contact.ts         # Contact form API endpoint
 ├── src/
-│   └── react-app/
-│       ├── components/    # React components
-│       ├── pages/         # Page components
-│       └── main.tsx       # App entry point
-├── public/                # Static assets
-└── index.html            # HTML template
+│   ├── components/    # React components
+│   ├── pages/         # Page components
+│   └── main.tsx       # App entry point
+├── public/            # Static assets
+└── index.html         # HTML template
 ```
 
 ## Customization
@@ -92,7 +62,7 @@ The contact form uses [Resend](https://resend.com) for email delivery:
 ### Colors
 The website uses a custom orange-green gradient theme. Update colors in:
 - `tailwind.config.js` - Color palette
-- `src/react-app/index.css` - CSS custom properties
+- `src/index.css` - CSS custom properties
 
 ### Content
 Update company information in:
@@ -101,9 +71,9 @@ Update company information in:
 
 ### Contact Information
 Update contact details in:
-- `src/react-app/components/Contact.tsx`
-- `src/react-app/components/Header.tsx`
-- `src/react-app/components/Footer.tsx`
+- `src/components/Contact.tsx`
+- `src/components/Header.tsx`
+- `src/components/Footer.tsx`
 
 ## Performance
 

@@ -20,33 +20,24 @@ export default function Contact() {
     setSubmitError(null);
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+      // Simulate API call delay
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // In a local environment, we'll just show a success message
+      // without actually sending the data anywhere
+      setIsSubmitted(true);
+      // Reset form immediately
+      setFormData({
+        name: '',
+        company: '',
+        email: '',
+        phone: '',
+        interest: '',
+        message: ''
       });
-
-      const result = await response.json();
-
-      if (result.success) {
-        setIsSubmitted(true);
-        // Reset form immediately
-        setFormData({
-          name: '',
-          company: '',
-          email: '',
-          phone: '',
-          interest: '',
-          message: ''
-        });
-      } else {
-        setSubmitError(result.message || 'An error occurred while sending your message.');
-      }
     } catch (error) {
       console.error('Contact form submission error:', error);
-      setSubmitError('Network error. Please check your connection and try again.');
+      setSubmitError('An error occurred while processing your request. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
